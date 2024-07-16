@@ -1,6 +1,7 @@
 # Multi-Tier Architecture on AWS using Terraform
 
-Deploy a scalable and resilient multi-tier architecture on AWS using Terraform.
+Deploy a scalable and resilient multi-tier architecture on AWS using Terraform for an ecommerce application.
+This project was undertaken during a project class to deepen our understanding of AWS architecture, Terraform, and autosaling strategies.
 
 ## 🚀 Project Overview
 
@@ -12,8 +13,22 @@ This project allows us to deploy a highly available, scalable, and secure multi-
 
 - **Database Tier**: The database stores and manages our application data. In this architecture, we use Amazon RDS for a managed database service.
 
+- **ecommerce app**: built it using Angular and MySQL, this project is built using Ant Design for its UI and SwiperJS for its carousels. The backend is built using Node.js, Express.js, Joi for input validation, and JWT for authentication.
+
+## web application Functionality
+
+The application allows you to browse the home page for products, check out each of the details of the product and add them to your cart for a later checkout.
+
+Adding products to your cart will make a notification pop up and indicate that the product was added successfully.
+
+You are able to see a preview of the cart on the top bar or even navigate into a more detailed cart page.
+
+The checkout process is a multi-page form that at the end allows you to place an order that will later be shown on the order history page.
+
+
+
 ## 📌 Architecture Diagram
-![multi-tier-architecture](https://github.com/mathesh-me/multi-tier-architecture-using-terraform/assets/144098846/14aeb752-ba87-4f51-87d5-bcf3000ee455)
+![multi-tier-architecture](/images/Architecture.png)
 
 
 ## 🚦 Getting Started
@@ -106,11 +121,6 @@ The Terraform configuration for this project is organized into different and res
 Follow these steps to deploy the architecture:
 
 1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/mathesh-me/multi-tier-architecture-using-terraform.git
-   ```
-
 2. Make changes as per your needs.
 3. Initialize Terraform and apply the configuration:
    ```
@@ -128,9 +138,3 @@ Follow these steps to deploy the architecture:
 - Configure the load balancer in the Web and Application Tiers to distribute traffic evenly.
 ### Security Considerations
 - Review and customize the security groups and network ACLs to meet your specific security requirements.
-
-## 🤝 Contributing
-Contributions are Welcome! Please read my Contributing Guidelines to get started with contributing to this project.
-
-## 📄 License
-This project is licensed under the MIT License.

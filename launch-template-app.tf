@@ -8,7 +8,7 @@ resource "aws_launch_template" "template-app" {
     device_index    = 0
     security_groups = [aws_security_group.asg-security-group-app.id]
   }
-  user_data = filebase64("user-data.sh")
+  user_data = filebase64("user-data-backend.sh")
   tag_specifications {
 
     resource_type = "instance"
